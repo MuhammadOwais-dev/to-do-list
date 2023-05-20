@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .input-container {
+      display: flex;
+    }
+    
+    .input-container input[type="text"] {
+      flex: 1;
+      padding: 5px;
+    }
+    
+    .input-container button {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .todo-item {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+    
+    .todo-item input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    
+    .todo-item button {
+      margin-left: auto;
+      padding: 3px 8px;
+      background-color: #f44336;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>To-Do List</h1>
+  <div class="container">
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Enter a task">
+      <button id="addBtn">Add</button>
+    </div>
+    <div id="todoList"></div>
+  </div>
+</body>
+</html> 
+<script src="app.js"></script>
+ 
